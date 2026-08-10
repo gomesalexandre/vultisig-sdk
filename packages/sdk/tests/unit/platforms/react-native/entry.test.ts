@@ -308,4 +308,12 @@ describe('RN entry exposes toChainAmount + ChainAmountParseError', () => {
     expect(rn.isKnownContract('0xA0b86991c6218b36c1d19d4a2e9eb0ce3606eb48')).toBe(true)
     expect(typeof rn.knownContracts.isKnownContract).toBe('function')
   })
+
+  it('exports the documented decode namespace from the RN entrypoint', async () => {
+    const rn = await import('../../../../src/platforms/react-native/index')
+
+    expect(rn.decode).toBeDefined()
+    expect(typeof rn.decode.fromToolResult).toBe('function')
+    expect(rn.decode.fromToolResult).toBe(rn.decodeFromToolResult)
+  })
 })
