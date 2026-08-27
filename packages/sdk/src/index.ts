@@ -227,7 +227,7 @@ export { defaultChains } from '@vultisig/core-chain/Chain'
 
 // Storage system - MemoryStorage is available in all platforms
 export type { StorageMetadata, StoredValue, Storage as VaultStorage } from './storage'
-export { MemoryStorage } from './storage'
+export { MemoryStorage, storageValuesEqual } from './storage'
 export { StorageError, StorageErrorCode } from './storage'
 
 // Event system

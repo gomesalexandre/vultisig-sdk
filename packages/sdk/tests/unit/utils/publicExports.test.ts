@@ -38,6 +38,12 @@ describe('@vultisig/sdk public exports', () => {
     expect(typeof sdk.UnknownChainError).toBe('function')
   })
 
+  it('exports the public storage compare-and-set equality helper', () => {
+    expect(typeof sdk.storageValuesEqual).toBe('function')
+    expect(sdk.storageValuesEqual({ a: 1 }, { a: 1 })).toBe(true)
+    expect(sdk.storageValuesEqual({ a: 1 }, { a: 2 })).toBe(false)
+  })
+
   it('exports canonical EIP-712 helpers for first-party consumers', () => {
     expect(typeof sdk.coerceEip712ChainId).toBe('function')
     expect(typeof sdk.computeEip712Hash).toBe('function')

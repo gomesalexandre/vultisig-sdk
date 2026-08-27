@@ -345,6 +345,10 @@ const configs = {
       distBase: 'tools/balance',
     }),
     ...createSubpathConfigs({
+      input: './src/tools/cosmos/index.ts',
+      distBase: 'tools/cosmos',
+    }),
+    ...createSubpathConfigs({
       input: './src/chains/tron/index.ts',
       distBase: 'chains/tron',
     }),

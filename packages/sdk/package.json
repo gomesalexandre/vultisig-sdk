@@ -128,6 +128,19 @@
       "require": "./dist/tools/balance/index.cjs",
       "default": "./dist/tools/balance/index.cjs"
     },
+    "./tools/cosmos": {
+      "types": "./dist/tools/cosmos/index.d.ts",
+      "browser": "./dist/tools/cosmos/index.js",
+      "worker": "./dist/tools/cosmos/index.js",
+      "react-native": "./dist/tools/cosmos/index.js",
+      "node": {
+        "import": "./dist/tools/cosmos/index.js",
+        "require": "./dist/tools/cosmos/index.cjs"
+      },
+      "import": "./dist/tools/cosmos/index.js",
+      "require": "./dist/tools/cosmos/index.cjs",
+      "default": "./dist/tools/cosmos/index.cjs"
+    },
     "./chains/tron": {
       "types": "./dist/chains/tron/index.d.ts",
       "browser": "./dist/chains/tron/index.js",
